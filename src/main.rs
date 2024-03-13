@@ -2,6 +2,8 @@ use std::io;
 use std::cmp::Ordering;
 use rand::Rng;
 
+mod properties;
+
 /*
 
 Maybe guessing game, but you can only use each character once?
@@ -64,6 +66,7 @@ Maybe the user has to spell out an ascii-string through the bit inputs
 */
 
 fn main() {
+
     println!("Guess the number!");
 
     let secret_number = rand::thread_rng().gen_range(1..=100);
